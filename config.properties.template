@@ -1,0 +1,7 @@
+hibernate.dialect=HIBERNATE_DIALECT
+hibernate.connection.driver_class=HIBERNATE_DRIVER_CLASS
+hibernate.connection.url=YOUR_DATABASE_URL
+hibernate.connection.username=YOUR_DATABASE_USER_NAME
+hibernate.connection.password=YOUR_DATABASE_PASSWORD
+hibernate.connection.pool_size=HIBERNATE_POOL_SIZE
+hibernate.connection.autocommit=HIBERNATE_AUTOCOMMIT
