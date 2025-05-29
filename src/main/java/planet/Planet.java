@@ -23,9 +23,9 @@ public class Planet {
             return false;
         }
 
-        Planet client = (Planet) obj;
+        Planet planet = (Planet) obj;
 
-        return this.id == client.getId() && this.name.equals(client.getName());
+        return this.id.equals(planet.getId()) && this.name.equals(planet.getName());
     }
 
     @Override

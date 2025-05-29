@@ -5,6 +5,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import planet.Planet;
+import ticket.Ticket;
 
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -54,6 +55,7 @@ public enum HibernateService {
     private void addAnnotatedClasses(Configuration conf) {
         conf.addAnnotatedClass(Client.class);
         conf.addAnnotatedClass(Planet.class);
+        conf.addAnnotatedClass(Ticket.class);
     }
 
     public synchronized void close() {

@@ -16,10 +16,10 @@ CREATE TABLE IF NOT EXISTS planet(
 
 CREATE TABLE IF NOT EXISTS ticket(
     id IDENTITY PRIMARY KEY,
-    created_at TIMESTAMP NOT NULL,
-    client_id BIGINT,
-    from_planet_id VARCHAR(100),
-    to_planet_id VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    client_id BIGINT NOT NULL,
+    from_planet_id VARCHAR(100) NOT NULL,
+    to_planet_id VARCHAR(100) NOT NULL,
 
     CONSTRAINT TICKET_CLIENT_ID_FK FOREIGN KEY (client_id) REFERENCES client(id),
     CONSTRAINT TICKET_FROM_PLANET_ID_FK FOREIGN KEY (from_planet_id) REFERENCES planet(id),

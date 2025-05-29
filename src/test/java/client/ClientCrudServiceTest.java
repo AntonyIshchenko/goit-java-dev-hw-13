@@ -58,7 +58,7 @@ public class ClientCrudServiceTest {
 
         Client expected = new Client();
         expected.setName("Maria Garcia");
-        expected.setId(2);
+        expected.setId(2L);
 
         Client actual = clientService.getById(2);
 
@@ -70,7 +70,7 @@ public class ClientCrudServiceTest {
 
         Client expected = new Client();
         expected.setName("Jackie Chan");
-        expected.setId(3);
+        expected.setId(3L);
 
         clientService.update(expected);
 
